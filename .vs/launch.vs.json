@@ -1,0 +1,25 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "qmarkdowntextedit.exe",
+      "name": "My Windows Debug Configuration",
+      "env": {
+        "PATH": "${env.PATH};C:\\Qt\\Qt5.14.1\\5.14.1\\msvc2017_64\\bin"
+      }
+    },
+    {
+      "type": "cppgdb",
+      "name": "My Linux Debug Configuration",
+      "project": "CMakeLists.txt",
+      "projectTarget": "qmarkdowntextedit",
+      "comment": "Learn how to configure remote debugging. See here for more info http://aka.ms/vslinuxdebug",
+      "debuggerConfiguration": "gdb",
+      "args": [],
+      "env": {"DISPLAY": ":1"}
+    }
+  ]
+}

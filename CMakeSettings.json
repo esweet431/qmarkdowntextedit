@@ -61,7 +61,7 @@
       "variables": [
         {
           "name": "CMAKE_PREFIX_PATH",
-          "value": "$HOME/qt/5.14.1/gcc_64/lib/cmake/Qt5Core;$HOME/qt/5.14.1/gcc_64/lib/cmake/Qt5Widgets",
+          "value": "$HOME/Qt5.14.1/5.14.1/gcc_64/lib/cmake",
           "type": "STRING"
         }
       ]

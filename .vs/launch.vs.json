@@ -19,7 +19,10 @@
       "comment": "Learn how to configure remote debugging. See here for more info http://aka.ms/vslinuxdebug",
       "debuggerConfiguration": "gdb",
       "args": [],
-      "env": {"DISPLAY": ":1"}
+      "env": {
+        "DISPLAY": ":1",
+        "LD_LIBRARY_PATH": "/home/accu/Qt5.14.1/5.14.1/gcc_64/lib"
+      }
     }
   ]
 }

@@ -37,6 +37,7 @@
 static const QByteArray _openingCharacters = QByteArrayLiteral("([{<*\"'_~");
 static const QByteArray _closingCharacters = QByteArrayLiteral(")]}>*\"'_~");
 
+
 QMarkdownTextEdit::QMarkdownTextEdit(QWidget *parent, bool initHighlighter)
     : QPlainTextEdit(parent) {
     installEventFilter(this);
@@ -88,11 +89,11 @@ QMarkdownTextEdit::QMarkdownTextEdit(QWidget *parent, bool initHighlighter)
     QTimer::singleShot(300, this, SLOT(adjustRightMargin()));
 }
 
-/**
- * Enables or disables the markdown highlighting
- *
- * @param enabled
- */
+
+/// <summary>
+/// Enables or disables markdown highlighting 
+/// </summary>
+/// <param name="enabled">Enables/disables highlighting</param>
 void QMarkdownTextEdit::setHighlightingEnabled(bool enabled) {
     if (_highlightingEnabled == enabled) {
         return;
